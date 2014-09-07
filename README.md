@@ -28,12 +28,12 @@ Optional TextSet parameters are columns, spacing, and justification
 
 To update a specific line, use addLine but pass in a line number e.g. 
 
-    addLine("Your Pizza Order Status: In the Oven", 0);
+    room.tSet.addLine("Your Pizza Order Status: In the Oven", 0);
     
 
 To insert a line use insertLine
 
-    insertLine("Extra Cheese",1);
+    room.tSet.insertLine("Extra Cheese",1);
     
 Both addLine and insertLine can also take a color vector as an optional 3rd argument 
 

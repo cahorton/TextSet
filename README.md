@@ -19,12 +19,12 @@ Text will wrap at the specified number of columns (default 40)
 
 Optional TextSet parameters are columns, spacing, and justification
 
+    room.tSet = new TextSet(60, 3, 2);  // 60 columns, triple spaced, right justified
+
 * Columns: default is 40
 * Spacing: 1 = single spaced, 2 = double spaced, etc.  Default is 2 for readability
 * Justification: 0 = left, 1 = center, 2 = right.  Default is left
 
-
-    room.tSet = new TextSet(60, 3, 2);  // 60 columns, triple spaced, right justified
 
 To update a specific line, use addLine but pass in a line number e.g. 
 
@@ -46,7 +46,13 @@ To manipulate the TextSet after it is created, use:
 * setScale(number) - default is 2
 * setCol(Vector3)  - default is blue (0,0,1)
 
+Examples:
+
     room.tSet.setPos(Vector(0,3,-10); // move
     room.tSet.setScale(4);            // scale up
-    room.tSet.setFwd(Vector(1,0,1));  // y is ignored
+    room.tSet.setFwd(Vector(1,0,1));  // change orientation, note y is ignored
     room.tSet.setCol(Vector(1,0,0));  // red
+    
+
+
+
